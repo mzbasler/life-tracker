@@ -3,7 +3,25 @@ const fs = require('fs');
 const path = require('path');
 
 const server = http.createServer((req, res) => {
-  const filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
+  let filePath;
+
+  switch (req.url) {
+    case '/':
+      filePath = 'index.html';
+      break;
+    case '/dashboard':
+      filePath = 'dashboard.html';
+      break;
+    case '/login':
+      filePath = 'login.html';
+      break;
+    default:
+      res.writeHead(404, { 'Content-Type': 'text/plain' });
+      res.end('404 Not Found');
+      return;
+  }
+
+  filePath = path.join(__dirname, filePath);
 
   fs.readFile(filePath, (err, data) => {
     if (err) {
@@ -13,9 +31,9 @@ const server = http.createServer((req, res) => {
     }
 
     let contentType = 'text/html';
-    if (req.url.endsWith('.css')) {
+    if (filePath.endsWith('.css')) {
       contentType = 'text/css';
-    } else if (req.url.endsWith('.js')) {
+    } else if (filePath.endsWith('.js')) {
       contentType = 'application/javascript';
     }
 
