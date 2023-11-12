@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const server = http.createServer((req, res) => {
-  let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
+  let filePath = path.join(__dirname, req.url === '/' ? 'login.html' : req.url);
 
   if(req.url === 'dashboard.html'){
     filePath = path.join(__dirname, req.url === '/dashboard.html' ? 'dashboard.html' : req.url);
