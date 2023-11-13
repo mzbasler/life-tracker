@@ -18,6 +18,10 @@ main {
   height: calc(100vh - 60px); /* Altura do main ajustada */
 }
 
+#titulo {
+  color: #5572fe;
+}
+
 #slogan {
   font-size: 24px;
 }
