@@ -17,3 +17,11 @@ body {
 main {
   height: calc(100vh - 60px); /* Altura do main ajustada */
 }
+
+#slogan {
+  font-size: 24px;
+}
+
+#sec-01-wrapper {
+  width: 600px;
+}
