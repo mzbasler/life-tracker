@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LifeTracker</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Link para o arquivo de estilos CSS customizado -->
+    <link rel="stylesheet" href="/assets/css/dashboard.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <!-- A tag <header> é usada para definir o cabeçalho do documento ou de uma seção -->
+    <header class="header">
+      <!-- A tag <nav> é usada para definir uma seção de navegação -->
+      <nav class="navbar bg-body-tertiary m-0">
+        <div class="container-fluid">
+          <!-- Logo e nome da marca com alinhamento vertical usando classes do Bootstrap -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="/assets/img/logo-lifetracker.svg"
+              alt="Logo"
+              class="d-inline-block align-middle"
+              style="height: 30px"
+            />
+            <span class="ms-2 align-middle">LifeTracker</span>
+          </a>
+          <!-- Botões de Entrar e Cadastrar -->
+          <div class="d-flex ms-auto">
+            <a href="#" class="btn btn-outline-primary me-2">Entrar</a>
+            <a href="#" class="btn btn-primary">Cadastrar</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="flex-grow-1">
+      <div class="row h-100 m-0">
+        <!-- Primeira coluna -->
+        <div class="col-4 d-flex align-items-center justify-content-center">
+          <div
+            class="d-flex flex-column align-items-start justify-content-center"
+          >
+            <!-- inputs para o grafico -->
+            <!-- Criatividade, hobbies e diversão -->
+            <div class="slider-container">
+              <label for="criatividade-hobbies-diversao"
+                >Criatividade, hobbies e diversão:</label
+              >
+              <input
+                type="range"
+                id="criatividade-hobbies-diversao"
+                min="0"
+                max="100"
+                value="0"
+                oninput="showValue('criatividade-hobbies-diversao', this.value); updateChart()"
+              />
+              <span id="criatividade-hobbies-diversaoValor">0</span>
+            </div>
+
+            <!-- Plenitude e felicidade -->
+            <div class="slider-container">
+              <label for="plenitude-felicidade">Plenitude e felicidade:</label>
+              <input
+                type="range"
+                id="plenitude-felicidade"
+                min="0"
+                max="100"
+                value="0"
+                oninput="showValue('plenitude-felicidade', this.value); updateChart()"
+              />
+              <span id="plenitude-felicidadeValor">0</span>
+            </div>
+
+            <!-- Espiritualidade -->
+            <div class="slider-container">
+              <label for="espiritualidade">Espiritualidade:</label>
+              <input
+                type="range"
+                id="espiritualidade"
+                min="0"
+                max="100"
+                value="0"
+                oninput="showValue('espiritualidade', this.value); updateChart()"
+              />
+              <span id="espiritualidadeValor">0</span>
+            </div>
+
+            <!-- Saúde e disposição -->
+            <div class="slider-container">
+              <label for="saude-disposicao">Saúde e disposição:</label>
+              <input
+                type="range"
+                id="saude-disposicao"
+                min="0"
+                max="100"
+                value="0"
+                oninput="showValue('saude-disposicao', this.value); updateChart()"
+              />
+              <span id="saude-disposicaoValor">0</span>
+            </div>
+
+            <!-- Desenvolvimento intelectual -->
+            <div class="slider-container">
+              <label for="desenvolvimento-intelectual"
+                >Desenvolvimento intelectual:</label
+              >
+              <input
+                type="range"
+                id="desenvolvimento-intelectual"
+                min="0"
+                max="100"
+                value="0"
+                oninput="showValue('desenvolvimento-intelectual', this.value); updateChart()"
+              />
+              <span id="desenvolvimento-intelectualValor">0</span>
+            </div>
+
+            <!-- Equilíbrio emocional -->
+            <div class="slider-container">
+              <label for="equilibrio-emocional">Equilíbrio emocional:</label>
+              <input
+                type="range"
+                id="equilibrio-emocional"
+                min="0"
+                max="100"
+                value="0"
+                oninput="showValue('equilibrio-emocional', this.value); updateChart()"
+              />
+              <span id="equilibrio-emocionalValor">0</span>
+            </div>
+
+            <!-- Realização e propósito -->
+            <div class="slider-container">
+              <label for="realizacao-proposito">Realização e propósito:</label>
+              <input
+                type="range"
+                id="realizacao-proposito"
+                min="0"
+                max="100"
+                value="0"
+                oninput="showValue('realizacao-proposito', this.value); updateChart()"
+              />
+              <span id="realizacao-propositoValor">0</span>
+            </div>
+
+            <!-- Recursos financeiros -->
+            <div class="slider-container">
+              <label for="recursos-financeiros">Recursos financeiros:</label>
+              <input
+                type="range"
+                id="recursos-financeiros"
+                min="0"
+                max="100"
+                value="0"
+                oninput="showValue('recursos-financeiros', this.value); updateChart()"
+              />
+              <span id="recursos-financeirosValor">0</span>
+            </div>
+
+            <!-- Contribuição social -->
+            <div class="slider-container">
+              <label for="contribuicao-social">Contribuição social:</label>
+              <input
+                type="range"
+                id="contribuicao-social"
+                min="0"
+                max="100"
+                value="0"
+                oninput="showValue('contribuicao-social', this.value); updateChart()"
+              />
+              <span id="contribuicao-socialValor">0</span>
+            </div>
+
+            <!-- Relacionamentos familiares -->
+            <div class="slider-container">
+              <label for="relacionamentos-familiares"
+                >Relacionamentos familiares:</label
+              >
+              <input
+                type="range"
+                id="relacionamentos-familiares"
+                min="0"
+                max="100"
+                value="0"
+                oninput="showValue('relacionamentos-familiares', this.value); updateChart()"
+              />
+              <span id="relacionamentos-familiaresValor">0</span>
+            </div>
+
+            <!-- Relacionamentos sociais -->
+            <div class="slider-container">
+              <label for="relacionamentos-sociais"
+                >Relacionamentos sociais:</label
+              >
+              <input
+                type="range"
+                id="relacionamentos-sociais"
+                min="0"
+                max="100"
+                value="0"
+                oninput="showValue('relacionamentos-sociais', this.value); updateChart()"
+              />
+              <span id="relacionamentos-sociaisValor">0</span>
+            </div>
+
+            <!-- Relacionamentos amorosos -->
+            <div class="slider-container">
+              <label for="relacionamentos-amorosos"
+                >Relacionamentos amorosos:</label
+              >
+              <input
+                type="range"
+                id="relacionamentos-amorosos"
+                min="0"
+                max="100"
+                value="0"
+                oninput="showValue('relacionamentos-amorosos', this.value); updateChart()"
+              />
+              <span id="relacionamentos-amorososValor">0</span>
+            </div>
+            <!-- Final inputs -->
+          </div>
+        </div>
+
+        <!-- Segunda coluna -->
+        <div
+          class="col-8 d-flex align-items-center justify-content-center"
+          style="min-height: 80vh"
+        >
+          <canvas id="meuRadarChart"></canvas>
+        </div>
+      </div>
+    </main>
+
+    <!-- Arquivo Charts.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Arquivo JavaScript Dashboard -->
+    <script src="/assets/js/dashboard.js"></script>
+    <!-- Arquivos JavaScript do Bootstrap -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
