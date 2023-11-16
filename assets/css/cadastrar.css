@@ -292,6 +292,11 @@ body {
       top: 5%;
       left: 84%;
     }
+
+    .ico-perfil:hover {
+      filter: brightness(180%); /* Isso aumentará o brilho ao passar o mouse */
+      cursor: pointer; /* Adiciona o cursor de ponteiro ao passar o mouse */
+    }
   
   
   

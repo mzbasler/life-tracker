@@ -27,5 +27,6 @@ function verificarSenha() {
       alert('Usuário cadastrado com sucesso');
       window.location.href = '/login.html';
     }
-  });
+
+});
   
