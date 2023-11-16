@@ -11,7 +11,7 @@ body {
     width: 100%
   }
   
-  .cadastrar .container-fluid2 {
+  .cadastrar .container-fluid {
     background-color: #ffffff;
     width: 100%; 
     height: 100vh;
@@ -48,7 +48,6 @@ body {
       width: 100%;
       top: 0%;
       left: 0%;
-      font-family: "Kanit-Medium", Helvetica;
       color: #ffffff;
       font-size: clamp(2vw, 2.4vw, 2.5em);
       letter-spacing: 0;
@@ -60,24 +59,21 @@ body {
       top: 6%;
       left: 0%;
       font-family: "Kanit-Light", Helvetica;
-      font-size: clamp(1.5vw, 1.8vw, 1.3em);
+      font-size: clamp(1.1vw, 1.5vw, 1.1em);
       line-height: 1.4em;
       position: absolute;
-      font-weight: 500;
       color: #ffffff;
       letter-spacing: 0;
     }
     
     .cadastrar .frase-filosofo {
-      max-width: 680px;
+      max-width: 700px;
       width: 80%;
       top: 65%;
       left: 10%;
-      font-family: "Kanit-LightItalic", Helvetica;
       font-style: italic;
-      font-size:clamp(1.2vw, 1.5vw, 1.2em);
+      font-size:clamp(1.1vw, 1.5vw, 1.1em);
       position: absolute;
-      font-weight: 300;
       color: #ffffff;
       letter-spacing: 0;
     }
@@ -108,10 +104,8 @@ body {
       width: 100%;
       top: 0%;
       left: 22%;
-      font-family: "Kanit-Medium", Helvetica;
-      font-weight: 400;
       color: #ffffff;
-      font-size: clamp(1.8vw, 2.0vw, 1em);
+      font-size: clamp(1.1vw, 1.4vw, 1.3em);
       letter-spacing: 0;
     }
   
@@ -131,8 +125,8 @@ body {
   
     .cadastrar .ico-filosofo {
       position: absolute;
-      max-width: clamp(2vw, 5.5vw, 60px);
-      max-height: clamp(1.5vw, 5.0vw, 60px);
+      max-width: clamp(3vw, 5vw, 57px);
+      max-height: clamp(1.5vw, 5.0vw, 57px);
       height: 100vh;
     }
   
@@ -150,7 +144,7 @@ body {
       max-width: 834px;
       width: 80%;
       height: 100vh;
-      top: 25%;
+      top: 24%;
       left: 55%;
     }
   
@@ -159,22 +153,22 @@ body {
       width: 80%;
       top: 0%;
       left: 0%;
-      font-family: "Kanit-Regular", Helvetica;
       font-weight: 400;
-      font-size: clamp(2vw, 3vw, 2.8em);
+      font-size: clamp(1.6vw, 2.5vw, 2em);
       letter-spacing: 0;
       line-height: normal;
     }
     
     .cadastrar .frase-cadastrar {
       position: relative;
+      max-width: 650px;
       width: 80%;
-      top: 6%;
+      top: 5%;
       left: 0%;
-      font-family: "Kanit-Regular", Helvetica;
-      font-weight: 500;
+      /* font-family: "Kanit-Regular", Helvetica; */
+      font-weight: 400;
       color: rgb(108, 108, 113);
-      font-size: clamp(1.2vw, 2vw, 1.5em);
+      font-size: clamp(1vw, 1.6vw, 1.2em);
       letter-spacing: 0;
       line-height: 1em;
     }
@@ -188,12 +182,12 @@ body {
       position: absolute;
       max-width: 191px;
       width: 75%;
-      top: 40%;
+      top: 37%;
       left: 55%;
       font-family: "Kanit-Light", Helvetica;
       font-weight: 300;
       color: #000000;
-      font-size: clamp(1.5vw, 2vw, 1.5em);
+      font-size: clamp(1.3vw, 1.5vw, 1.5em);
       letter-spacing: 0;
       line-height: normal;
       white-space: nowrap;
@@ -203,12 +197,12 @@ body {
       position: absolute;
       max-width: 191px;
       width: 80%;
-      top: 53%;
+      top: 47%;
       left: 55%;
       font-family: "Kanit-Light", Helvetica;
       font-weight: 300;
       color: #000000;
-      font-size: clamp(1.5vw, 2vw, 1.5em);
+      font-size: clamp(1.3vw, 1.5vw, 1.5em);
       letter-spacing: 0;
       line-height: normal;
       white-space: nowrap;
@@ -218,12 +212,12 @@ body {
         position: absolute;
         max-width: 191px;
         width: 80%;
-        top: 66%;
+        top: 57%;
         left: 55%;
         font-family: "Kanit-Light", Helvetica;
         font-weight: 300;
         color: #000000;
-        font-size: clamp(1.5vw, 2vw, 1.5em);
+        font-size: clamp(1.3vw, 1.5vw, 1.5em);
         letter-spacing: 0;
         line-height: normal;
         white-space: nowrap;
@@ -235,7 +229,7 @@ body {
       width: 80%;
       max-height: 67px;
       height: 100vh;
-      top: 80%;
+      top: 72%;
       left: 55%;
     }
       
@@ -245,13 +239,13 @@ body {
     .cadastrar #email {
     width: 40vw; 
     max-width: 633px; 
-    height: 7vh;
+    height: 5.5vh;
     max-height: 67px; 
-    font-size: 1.5vw; 
+    font-size: clamp(1vw, 1.3vw, 1.3em); 
     }
   
     .cadastrar .btn {
-      font-size: clamp(1.5vw, 2vw, 1.5em);
+      font-size: clamp(1vw, 1.3vw, 1.3em);
       font-family: "Kanit-Light", Helvetica;
     }
     
@@ -291,11 +285,11 @@ body {
     
     .cadastrar .ico-perfil {
       position: absolute;
-      max-width: 53px;
-      max-height: 53px;
+      max-width: 50px;
+      max-height: 50px;
       width: 80%;
       height: 100vh;
-      top: 3%;
+      top: 5%;
       left: 84%;
     }
   
