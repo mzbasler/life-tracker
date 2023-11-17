@@ -3,33 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sua Página</title>
-    <!-- CSS do Bootstrap -->
+
+    <title>LifeTracker</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header
-      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
-    >
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-end mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">LOGO</a></li>
-        <li><a href="#" class="nav-link px-2">Sobre</a></li>
-        <li><a href="#" class="nav-link px-2">Recursos</a></li>
-      </ul>
 
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">
-          Login
-        </button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
-      </div>
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Link para o arquivo de estilos CSS customizado -->
+    <link rel="stylesheet" href="/assets/css/index.css" />
+  </head>
+
+  <body class="d-flex flex-column vh-100">
+    <!-- HEADER -->
+    <!-- A tag <header> é usada para definir o cabeçalho do documento ou de uma seção -->
+    <header class="header">
+      <!-- A tag <nav> é usada para definir uma seção de navegação -->
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- Logo e nome da marca com alinhamento vertical usando classes do Bootstrap -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="assets/img/logo-lifetracker.svg"
+              alt="Logo"
+              class="d-inline-block align-middle"
+              style="height: 30px"
+            />
+            <span class="ms-2 align-middle">LifeTracker</span>
+          </a>
+          <!-- Botões de Entrar e Cadastrar -->
+          <div class="d-flex ms-auto">
+            <a
+              href="/assets/pages/login.html"
+              class="btn btn-outline-primary me-2"
+              >Entrar</a
+            >
+            <a href="/assets/pages/cadastrar.html" class="btn btn-primary"
+              >Cadastrar</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
 
+    <!-- MAIN -->
+    <!-- A tag <main> é usada para o conteúdo principal do documento -->
+    <main class="flex-grow-1">
+      <!-- .row é uma classe do Bootstrap usada para linhas em um sistema de grid -->
+      <div class="row h-100">
+        <!-- .col é uma classe do Bootstrap para colunas em um sistema de grid -->
+        <div class="col d-flex align-items-center justify-content-center">
+          <!-- Conteúdo da primeira coluna -->
+          <div
+            class="d-flex flex-column align-items-start justify-content-center mx-4"
+          >
+            <!-- Repetição do logotipo e nome da marca -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <img
+                src="assets/img/logo-lifetracker.svg"
+                alt="Logo"
+                class="d-inline-block align-middle"
+                style="height: 30px"
+              />
+              <span class="ms-2 align-middle">LifeTracker</span>
+            </a>
+            <!-- Título e parágrafo de introdução -->
+            <h1>Seja bem-vindo ao LifeTracker!</h1>
+            <p>
+              Sua ferramenta para uma vida bem gerenciada, onde planos se tornam
+              realidade.
+            </p>
+            <!-- Botão de cadastro -->
+            <a href="/assets/pages/cadastrar.html" class="btn btn-primary"
+              >Cadastrar</a
+            >
+          </div>
+        </div>
+
+        <!-- Segunda coluna -->
+        <div class="col d-flex align-items-center justify-content-center">
+          <!-- Conteúdo da segunda coluna -->
+          <div class="d-flex justify-content-center">
+            <!-- Imagem, por exemplo, um gráfico ou diagrama -->
+            <img src="assets/img/chart.png" alt="Chart Image" />
+          </div>
+        </div>
+      </div>
+    </main>
+
     <!-- Arquivos JavaScript do Bootstrap -->
+    <!-- Este script inclui o JavaScript necessário para funcionalidades do Bootstrap -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
