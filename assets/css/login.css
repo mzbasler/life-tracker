@@ -187,7 +187,7 @@ body {
     font-family: "Kanit-Light", Helvetica;
     font-weight: 300;
     color: #000000;
-    font-size: clamp(1.3vw, 1.5vw, 1.5em);
+    font-size: clamp(1.3vw, 1.3vw, 1.5em);
     letter-spacing: 0;
     line-height: normal;
     white-space: nowrap;
@@ -197,12 +197,12 @@ body {
     position: absolute;
     max-width: 191px;
     width: 80%;
-    top: 47%;
+    top: 48%;
     left: 55%;
     font-family: "Kanit-Light", Helvetica;
     font-weight: 300;
     color: #000000;
-    font-size: clamp(1.3vw, 1.5vw, 1.5em);
+    font-size: clamp(1.3vw, 1.3vw, 1.5em);
     letter-spacing: 0;
     line-height: normal;
     white-space: nowrap;
@@ -235,7 +235,7 @@ body {
   max-width: 633px; 
   height: 5.5vh;
   max-height: 67px; 
-  font-size: clamp(1vw, 1.3vw, 1.3em); 
+  font-size: clamp(1.3vw, 1.3vw, 1.5em); 
   }
 
   .login .btn {
