@@ -17,3 +17,30 @@
   main {
     height: calc(100vh - 60px); /* Altura do main ajustada */
   }
+
+  .overlap-azul {
+    background-color: #5572fe;
+  }
+
+  .span-life{
+    color: #ffffff;
+    font-size: clamp(1.5vw, 2vw, 1.5em);
+  }
+
+  .bem-vindo{
+   color: #ffffff;
+  }
+
+  .p{
+    color: #d9dfff;
+  }
+
+  .btn{
+    background-color: #d9dfff;
+    color: black;
+  }
+
+.chart{
+  width: 88%;
+  opacity: 0.7;
+}
