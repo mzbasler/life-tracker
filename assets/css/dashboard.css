@@ -57,6 +57,7 @@ main {
 /* Estilo geral do controle deslizante */
 input[type="range"] {
   -webkit-appearance: none; /* Remover a aparência padrão */
+  appearance: none; /* Define a aparência padrão */
   width: 100%; /* Largura do controle deslizante */
   height: 2px; /* Altura da trilha */
   background: #ddd; /* Cor da trilha */

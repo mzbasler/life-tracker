@@ -62,7 +62,7 @@
                 type="range"
                 id="criatividade-hobbies-diversao"
                 min="0"
-                max="100"
+                max="10"
                 value="0"
                 oninput="showValue('criatividade-hobbies-diversao', this.value); updateChart()"
               />
@@ -76,7 +76,7 @@
                 type="range"
                 id="plenitude-felicidade"
                 min="0"
-                max="100"
+                max="10"
                 value="0"
                 oninput="showValue('plenitude-felicidade', this.value); updateChart()"
               />
@@ -90,7 +90,7 @@
                 type="range"
                 id="espiritualidade"
                 min="0"
-                max="100"
+                max="10"
                 value="0"
                 oninput="showValue('espiritualidade', this.value); updateChart()"
               />
@@ -104,7 +104,7 @@
                 type="range"
                 id="saude-disposicao"
                 min="0"
-                max="100"
+                max="10"
                 value="0"
                 oninput="showValue('saude-disposicao', this.value); updateChart()"
               />
@@ -120,7 +120,7 @@
                 type="range"
                 id="desenvolvimento-intelectual"
                 min="0"
-                max="100"
+                max="10"
                 value="0"
                 oninput="showValue('desenvolvimento-intelectual', this.value); updateChart()"
               />
@@ -134,7 +134,7 @@
                 type="range"
                 id="equilibrio-emocional"
                 min="0"
-                max="100"
+                max="10"
                 value="0"
                 oninput="showValue('equilibrio-emocional', this.value); updateChart()"
               />
@@ -148,7 +148,7 @@
                 type="range"
                 id="realizacao-proposito"
                 min="0"
-                max="100"
+                max="10"
                 value="0"
                 oninput="showValue('realizacao-proposito', this.value); updateChart()"
               />
@@ -162,7 +162,7 @@
                 type="range"
                 id="recursos-financeiros"
                 min="0"
-                max="100"
+                max="10"
                 value="0"
                 oninput="showValue('recursos-financeiros', this.value); updateChart()"
               />
@@ -176,7 +176,7 @@
                 type="range"
                 id="contribuicao-social"
                 min="0"
-                max="100"
+                max="10"
                 value="0"
                 oninput="showValue('contribuicao-social', this.value); updateChart()"
               />
@@ -192,7 +192,7 @@
                 type="range"
                 id="relacionamentos-familiares"
                 min="0"
-                max="100"
+                max="10"
                 value="0"
                 oninput="showValue('relacionamentos-familiares', this.value); updateChart()"
               />
@@ -208,7 +208,7 @@
                 type="range"
                 id="relacionamentos-sociais"
                 min="0"
-                max="100"
+                max="10"
                 value="0"
                 oninput="showValue('relacionamentos-sociais', this.value); updateChart()"
               />
@@ -224,11 +224,17 @@
                 type="range"
                 id="relacionamentos-amorosos"
                 min="0"
-                max="100"
+                max="10"
                 value="0"
                 oninput="showValue('relacionamentos-amorosos', this.value); updateChart()"
               />
               <span id="relacionamentos-amorososValor">0</span>
+            </div>
+            <div class="buttons pt-4">
+              <button id="saveButton" class="btn btn-light">Salvar</button>
+              <button id="addApplicationButton" class="btn btn-light">
+                Inserir Outra Aplicação
+              </button>
             </div>
             <!-- Final inputs -->
           </div>
@@ -246,9 +252,9 @@
 
     <!-- Arquivo Charts.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Arquivo JavaScript Dashboard -->
-    <script src="/assets/js/dashboard.js"></script>
     <!-- Arquivos JavaScript do Bootstrap -->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Arquivo JavaScript Dashboard -->
+    <script src="/assets/js/dashboard.js"></script>
   </body>
 </html>
