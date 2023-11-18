@@ -25,10 +25,10 @@
     <!-- A tag <header> é usada para definir o cabeçalho do documento ou de uma seção -->
     <header class="header">
       <!-- A tag <nav> é usada para definir uma seção de navegação -->
-      <nav class="navbar bg-body-tertiary m-0">
+      <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <!-- Logo e nome da marca com alinhamento vertical usando classes do Bootstrap -->
-          <a class="navbar-brand d-flex align-items-center" href="#">
+          <a class="navbar-brand" href="/index.html">
             <img
               src="/assets/img/logo-lifetracker.svg"
               alt="Logo"
@@ -37,11 +37,6 @@
             />
             <span class="ms-2 align-middle">LifeTracker</span>
           </a>
-          <!-- Botões de Entrar e Cadastrar -->
-          <div class="d-flex ms-auto">
-            <a href="#" class="btn btn-outline-primary me-2">Entrar</a>
-            <a href="#" class="btn btn-primary">Cadastrar</a>
-          </div>
         </div>
       </nav>
     </header>
@@ -50,9 +45,12 @@
     <main class="flex-grow-1">
       <div class="row h-100 m-0">
         <!-- Primeira coluna -->
-        <div class="col-4 d-flex align-items-center justify-content-center">
+        <div
+          id="entrada-dados"
+          class="col-lg-6 col-12 d-flex align-items-center justify-content-center"
+        >
           <div
-            class="d-flex flex-column align-items-start justify-content-center"
+            class="d-flex flex-column align-items-start justify-content-center py-5"
           >
             <!-- inputs para o grafico -->
             <!-- Criatividade, hobbies e diversão -->
@@ -238,7 +236,7 @@
 
         <!-- Segunda coluna -->
         <div
-          class="col-8 d-flex align-items-center justify-content-center"
+          class="col-lg-6 col-12 d-flex align-items-center justify-content-center"
           style="min-height: 80vh"
         >
           <canvas id="meuRadarChart"></canvas>
