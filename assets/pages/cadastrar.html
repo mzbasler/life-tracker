@@ -1,82 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeTracker - Cadastro</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LifeTracker</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/css/cadastrar.css">
-  <link
-  rel="shortcut icon"
-  href="/assets/img/favicon.svg"
-  type="image/x-icon"
-  />
-</head>
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.svg"
+      type="image/x-icon"
+    />
 
-<body class="bg-light d-flex align-items-center justify-content-center">
-  
-  <div class="cadastrar">
-    <div class="container-fluid">
+    <!-- Link para o arquivo bootstrap icone -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
 
+    <!-- Link para o arquivo de estilos CSS customizado -->
+    <link rel="stylesheet" href="/assets/css/cadastrar.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
 
-      <div class="overlap-azul bg-primary text-white">
-        <div class="overlap-bemvindo">
-          <p class="bem-vindo">Seja bem-vindo ao LifeTracker
-            <p class="frase-bemvindo">"Conhecer a si mesmo é o começo de toda sabedoria." -Aristóteles </p>
-          </p>
+  <body class="d-flex flex-column vh-100">
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <!-- Logo e nome da marca com alinhamento vertical usando classes do Bootstrap -->
+          <a class="navbar-brand" href="/index.html">
+            <img
+              src="/assets/img/logo-lifetracker.svg"
+              alt="Logo"
+              class="d-inline-block align-middle"
+              style="height: 30px"
+            />
+            <span class="ms-2 align-middle">LifeTracker</span>
+          </a>
         </div>
-        <p class="frase-filosofo">
-          “Conhecer os outros é inteligência, conhecer-se a si próprio é verdadeira sabedoria. 
-          Controlar os outros é força, controlar-se a si próprio é verdadeiro poder.”
-        </p>
-        <img class="img-estrelas" src="/assets/img/estrelas.svg" alt="Star Rating Image" id="starRating">
-        <div class="autor-frase">
-          <p class="filosofo">
-            <span>Lao-Tsé<br/></span>
-            <span class="filosofo-span">Filósofo Chinês</span>
-          </p>
-          <img class="ico-filosofo" src="/assets/img/perfil2.svg" alt="filosofo">
-        </div>
-      </div>
-      <!-- Quebre a página aqui -->
-      <div class="overlap-branco">
-        <div class="overlap-cadastrar">
-          <div class="texto-cadastrar font-weight-bold">Cadastre-se</div>
-          <p class="frase-cadastrar">E descubra o que precisa para traçar novos objetivos e equilibrar sua vida.</p>
-        </div>
-        <div class="email form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" class="form-control">
-        </div>
-        <div class="senha form-group">
-          <label for="senha">Senha:</label>
-          <input type="password" id="senha" class="form-control">
-        </div>
-        <div class="repetir-senha form-group">
-            <label for="senha">Repetir senha:</label>
-            <input type="password" id="repetir-senha" class="form-control">
-          </div>
-        <div class="overlap-login">
-          <button class="btn btn-primary btn-block" id="cadastrarButton">Cadastrar</button>
-        </div>
-        <div class="overlap-logo">
-          <a class="navbar-brand d-flex align-items-center" href="/index.html">
-            <img src="/assets/img/logo-lifetracker.svg" alt="Rectangle Image" style="height: 50px">
-              <div class="overlap-lifetrack">
-                <span class="texto-lifetrack ms-2 align-middle">LifeTracker</span>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Row-->
+      <div class="row h-100 p-0 m-0">
+        <!-- Col 1 -->
+        <div
+          id="col-1"
+          class="col-lg-6 col-12 d-flex align-items-center justify-content-center bg-primary"
+        >
+          <div class="bg-primary text-white py-4 px-3">
+            <div class="py-5 px-5">
+              <h1>Seja bem-vindo ao LifeTracker!</h1>
+              <p>
+                Sua ferramenta para uma vida bem gerenciada, onde planos se
+                tornam realidade.
+              </p>
+            </div>
+            <div class="filosofo-wrapper py-5 px-5">
+              <div class="row">
+                <div>
+                  <div class="d-flex">
+                    <i class="bi bi-star-fill m-1 estrela"></i>
+                    <i class="bi bi-star-fill m-1 estrela"></i>
+                    <i class="bi bi-star-fill m-1 estrela"></i>
+                    <i class="bi bi-star-fill m-1 estrela"></i>
+                    <i class="bi bi-star-fill m-1 estrela"></i>
+                  </div>
+
+                  <p>
+                    “Conhecer os outros é inteligência, conhecer-se a si próprio
+                    é verdadeira sabedoria. Controlar os outros é força,
+                    controlar-se a si próprio é verdadeiro poder.”
+                  </p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/assets/img/perfil2.svg"
+                    alt="Lao-Tsé"
+                    class="img-fluid me-3"
+                  />
+                  <div>
+                    <p class="m-0">Lao-Tsé</p>
+                    <p class="m-0">Filósofo Chinês</p>
+                  </div>
+                </div>
               </div>
-           </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div
+          id="col-2"
+          class="col-lg-6 col-12 d-flex align-items-center justify-content-center"
+        >
+          <div id="col2-wrapper" class="py-4 px-3">
+            <div>
+              <h1>Cadastre-se</h1>
+              <p class="frase-cadastrar">
+                Insira seu email e senha e confirme as informações de registro.
+              </p>
+            </div>
+            <div class="email form-group py-1">
+              <label for="email">Email:</label>
+              <input type="email" id="email" class="form-control" />
+            </div>
+            <div class="senha form-group py-1">
+              <label for="senha">Senha:</label>
+              <input type="password" id="senha" class="form-control" />
+            </div>
+            <div class="repetir-senha form-group py-1">
+              <label for="senha">Repetir senha:</label>
+              <input type="password" id="repetir-senha" class="form-control" />
+            </div>
+            <div class="pt-2">
+              <button
+                type="button"
+                class="btn btn-primary btn-block"
+                id="cadastrarUsuario"
+              >
+                Cadastrar
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="/assets/js/cadastrar.js"></script>
-
-</body>
+    </main>
+    <script src="/assets/js/cadastrar.js"></script>
+  </body>
 </html>

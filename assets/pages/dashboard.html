@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>LifeTracker</title>
+    <title>LifeTracker - Dashboard</title>
     <link
       rel="stylesheet"
       href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -37,17 +37,28 @@
             />
             <span class="ms-2 align-middle">LifeTracker</span>
           </a>
+          <!-- Botões de Entrar e Cadastrar -->
+          <div class="d-flex ms-auto">
+            <a
+              href="/assets/pages/login.html"
+              class="btn btn-outline-primary me-2"
+              >Entrar</a
+            >
+            <a href="/assets/pages/cadastrar.html" class="btn btn-primary"
+              >Cadastrar</a
+            >
+          </div>
         </div>
       </nav>
     </header>
 
     <!-- MAIN -->
-    <main class="flex-grow-1">
-      <div class="row h-100 m-0">
+    <main>
+      <div class="row h-100 p-0 m-0">
         <!-- Primeira coluna -->
         <div
           id="entrada-dados"
-          class="col-lg-6 col-12 d-flex align-items-center justify-content-center"
+          class="col-lg-6 col-12 d-flex align-items-center justify-content-center bg-primary"
         >
           <div
             class="d-flex flex-column align-items-start justify-content-center py-5"
