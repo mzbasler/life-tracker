@@ -29,7 +29,8 @@
   <body class="d-flex flex-column vh-100">
     <!-- HEADER -->
     <header>
-      <nav class="navbar">
+      <!-- A tag <nav> é usada para definir uma seção de navegação -->
+      <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <!-- Logo e nome da marca com alinhamento vertical usando classes do Bootstrap -->
           <a class="navbar-brand" href="/index.html">
@@ -40,18 +41,18 @@
               style="height: 30px"
             />
             <span class="ms-2 align-middle">LifeTracker</span>
-            <!-- Botões de Entrar e Cadastrar -->
-            <div class="d-flex ms-auto">
-              <a
-                href="/assets/pages/login.html"
-                class="btn btn-outline-primary me-2"
-                >Entrar</a
-              >
-              <a href="/assets/pages/cadastrar.html" class="btn btn-primary"
-                >Cadastrar</a
-              >
-            </div>
           </a>
+          <!-- Botões de Entrar e Cadastrar -->
+          <div class="d-flex ms-auto">
+            <a
+              href="/assets/pages/login.html"
+              class="btn btn-outline-primary me-2"
+              >Entrar</a
+            >
+            <a href="/assets/pages/cadastrar.html" class="btn btn-primary"
+              >Cadastrar</a
+            >
+          </div>
         </div>
       </nav>
     </header>
@@ -119,7 +120,12 @@
             </div>
             <div class="email form-group py-1">
               <label for="email">Email:</label>
-              <input type="email" id="email" class="form-control" />
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                autocomplete="email"
+              />
             </div>
             <div class="senha form-group py-1">
               <label for="senha">Senha:</label>

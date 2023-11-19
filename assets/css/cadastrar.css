@@ -22,3 +22,17 @@ main {
 .estrela {
   color: yellow;
 }
+
+#col-1 {
+  display: block;
+}
+
+/* Estilo para dispositivos móveis - Usando !important e ajustando o breakpoint */
+@media (max-width: 768px) {
+  #col-1 {
+    display: none !important;
+  }
+  #col2-wrapper {
+    width: 90%;
+  }
+}

@@ -57,202 +57,269 @@
       <div class="row h-100 p-0 m-0">
         <!-- Primeira coluna -->
         <div
-          id="entrada-dados"
+          id="col-1"
           class="col-lg-6 col-12 d-flex align-items-center justify-content-center"
         >
           <div
+            id="slider-wrapper"
             class="d-flex flex-column align-items-start justify-content-center py-5"
           >
-            <!-- inputs para o grafico -->
-            <!-- Criatividade, hobbies e diversão -->
-            <div class="slider-container">
-              <label for="criatividade-hobbies-diversao"
-                >Criatividade, hobbies e diversão:</label
-              >
-              <input
-                type="range"
-                id="criatividade-hobbies-diversao"
-                min="0"
-                max="10"
-                value="0"
-                oninput="showValue('criatividade-hobbies-diversao', this.value); updateChart()"
-              />
-              <span id="criatividade-hobbies-diversaoValor">0</span>
+            <!-- Criatividade, hobies e diversão -->
+            <div class="d-flex align-items-center">
+              <div class="p-2 flex-fill">
+                <label for="criatividade-hobbies-diversao"
+                  >Criatividade, hobbies e diversão:</label
+                >
+              </div>
+              <div class="p-2 flex-fill">
+                <input
+                  type="range"
+                  id="criatividade-hobbies-diversao"
+                  min="0"
+                  max="10"
+                  value="0"
+                  oninput="showValue('criatividade-hobbies-diversao', this.value); updateChart()"
+                />
+              </div>
+              <div class="p-2 flex-fill">
+                <span id="criatividade-hobbies-diversaoValor">0</span>
+              </div>
             </div>
-
             <!-- Plenitude e felicidade -->
-            <div class="slider-container">
-              <label for="plenitude-felicidade">Plenitude e felicidade:</label>
-              <input
-                type="range"
-                id="plenitude-felicidade"
-                min="0"
-                max="10"
-                value="0"
-                oninput="showValue('plenitude-felicidade', this.value); updateChart()"
-              />
-              <span id="plenitude-felicidadeValor">0</span>
+            <div class="d-flex align-items-center">
+              <div class="p-2 flex-fill">
+                <label for="plenitude-felicidade"
+                  >Plenitude e felicidade:</label
+                >
+              </div>
+              <div class="p-2 flex-fill">
+                <input
+                  type="range"
+                  id="plenitude-felicidade"
+                  min="0"
+                  max="10"
+                  value="0"
+                  oninput="showValue('plenitude-felicidade', this.value); updateChart()"
+                />
+              </div>
+              <div class="p-2 flex-fill">
+                <span id="plenitude-felicidadeValor">0</span>
+              </div>
             </div>
-
             <!-- Espiritualidade -->
-            <div class="slider-container">
-              <label for="espiritualidade">Espiritualidade:</label>
-              <input
-                type="range"
-                id="espiritualidade"
-                min="0"
-                max="10"
-                value="0"
-                oninput="showValue('espiritualidade', this.value); updateChart()"
-              />
-              <span id="espiritualidadeValor">0</span>
+            <div class="d-flex align-items-center">
+              <div class="p-2 flex-fill">
+                <label for="plenitude-felicidade">Espiritualidade:</label>
+              </div>
+              <div class="p-2 flex-fill">
+                <input
+                  type="range"
+                  id="espiritualidade"
+                  min="0"
+                  max="10"
+                  value="0"
+                  oninput="showValue('espiritualidade', this.value); updateChart()"
+                />
+              </div>
+              <div class="p-2 flex-fill">
+                <span id="espiritualidadeValor">0</span>
+              </div>
             </div>
-
             <!-- Saúde e disposição -->
-            <div class="slider-container">
-              <label for="saude-disposicao">Saúde e disposição:</label>
-              <input
-                type="range"
-                id="saude-disposicao"
-                min="0"
-                max="10"
-                value="0"
-                oninput="showValue('saude-disposicao', this.value); updateChart()"
-              />
-              <span id="saude-disposicaoValor">0</span>
+            <div class="d-flex align-items-center">
+              <div class="p-2 flex-fill">
+                <label for="saude-disposicao">Saúde e disposição:</label>
+              </div>
+              <div class="p-2 flex-fill">
+                <input
+                  type="range"
+                  id="saude-disposicao"
+                  min="0"
+                  max="10"
+                  value="0"
+                  oninput="showValue('saude-disposicao', this.value); updateChart()"
+                />
+              </div>
+              <div class="p-2 flex-fill">
+                <span id="saude-disposicaoValor">0</span>
+              </div>
             </div>
-
-            <!-- Desenvolvimento intelectual -->
-            <div class="slider-container">
-              <label for="desenvolvimento-intelectual"
-                >Desenvolvimento intelectual:</label
-              >
-              <input
-                type="range"
-                id="desenvolvimento-intelectual"
-                min="0"
-                max="10"
-                value="0"
-                oninput="showValue('desenvolvimento-intelectual', this.value); updateChart()"
-              />
-              <span id="desenvolvimento-intelectualValor">0</span>
+            <!-- Desenvolvimento-intelectual -->
+            <div class="d-flex align-items-center">
+              <div class="p-2 flex-fill">
+                <label for="desenvolvimento-intelectual"
+                  >Desenvolvimento-intelectual:</label
+                >
+              </div>
+              <div class="p-2 flex-fill">
+                <input
+                  type="range"
+                  id="desenvolvimento-intelectual"
+                  min="0"
+                  max="10"
+                  value="0"
+                  oninput="showValue('desenvolvimento-intelectual', this.value); updateChart()"
+                />
+              </div>
+              <div class="p-2 flex-fill">
+                <span id="desenvolvimento-intelectualValor">0</span>
+              </div>
             </div>
-
             <!-- Equilíbrio emocional -->
-            <div class="slider-container">
-              <label for="equilibrio-emocional">Equilíbrio emocional:</label>
-              <input
-                type="range"
-                id="equilibrio-emocional"
-                min="0"
-                max="10"
-                value="0"
-                oninput="showValue('equilibrio-emocional', this.value); updateChart()"
-              />
-              <span id="equilibrio-emocionalValor">0</span>
+            <div class="d-flex align-items-center">
+              <div class="p-2 flex-fill">
+                <label for="equilibrio-emocional">Equilíbrio emocional:</label>
+              </div>
+              <div class="p-2 flex-fill">
+                <input
+                  type="range"
+                  id="equilibrio-emocional"
+                  min="0"
+                  max="10"
+                  value="0"
+                  oninput="showValue('equilibrio-emocional', this.value); updateChart()"
+                />
+              </div>
+              <div class="p-2 flex-fill">
+                <span id="equilibrio-emocionalValor">0</span>
+              </div>
             </div>
-
             <!-- Realização e propósito -->
-            <div class="slider-container">
-              <label for="realizacao-proposito">Realização e propósito:</label>
-              <input
-                type="range"
-                id="realizacao-proposito"
-                min="0"
-                max="10"
-                value="0"
-                oninput="showValue('realizacao-proposito', this.value); updateChart()"
-              />
-              <span id="realizacao-propositoValor">0</span>
+            <div class="d-flex align-items-center">
+              <div class="p-2 flex-fill">
+                <label for="realizacao-proposito"
+                  >Realização e propósito:</label
+                >
+              </div>
+              <div class="p-2 flex-fill">
+                <input
+                  type="range"
+                  id="realizacao-proposito"
+                  min="0"
+                  max="10"
+                  value="0"
+                  oninput="showValue('realizacao-proposito', this.value); updateChart()"
+                />
+              </div>
+              <div class="p-2 flex-fill">
+                <span id="realizacao-propositoValor">0</span>
+              </div>
             </div>
-
             <!-- Recursos financeiros -->
-            <div class="slider-container">
-              <label for="recursos-financeiros">Recursos financeiros:</label>
-              <input
-                type="range"
-                id="recursos-financeiros"
-                min="0"
-                max="10"
-                value="0"
-                oninput="showValue('recursos-financeiros', this.value); updateChart()"
-              />
-              <span id="recursos-financeirosValor">0</span>
+            <div class="d-flex align-items-center">
+              <div class="p-2 flex-fill">
+                <label for="recursos-financeiros">Recursos financeiros:</label>
+              </div>
+              <div class="p-2 flex-fill">
+                <input
+                  type="range"
+                  id="recursos-financeiros"
+                  min="0"
+                  max="10"
+                  value="0"
+                  oninput="showValue('recursos-financeiros', this.value); updateChart()"
+                />
+              </div>
+              <div class="p-2 flex-fill">
+                <span id="recursos-financeirosValor">0</span>
+              </div>
             </div>
-
             <!-- Contribuição social -->
-            <div class="slider-container">
-              <label for="contribuicao-social">Contribuição social:</label>
-              <input
-                type="range"
-                id="contribuicao-social"
-                min="0"
-                max="10"
-                value="0"
-                oninput="showValue('contribuicao-social', this.value); updateChart()"
-              />
-              <span id="contribuicao-socialValor">0</span>
+            <div class="d-flex align-items-center">
+              <div class="p-2 flex-fill">
+                <label for="contribuicao-social">Contribuição social:</label>
+              </div>
+              <div class="p-2 flex-fill">
+                <input
+                  type="range"
+                  id="contribuicao-social"
+                  min="0"
+                  max="10"
+                  value="0"
+                  oninput="showValue('contribuicao-social', this.value); updateChart()"
+                />
+              </div>
+              <div class="p-2 flex-fill">
+                <span id="contribuicao-socialValor">0</span>
+              </div>
             </div>
-
             <!-- Relacionamentos familiares -->
-            <div class="slider-container">
-              <label for="relacionamentos-familiares"
-                >Relacionamentos familiares:</label
-              >
-              <input
-                type="range"
-                id="relacionamentos-familiares"
-                min="0"
-                max="10"
-                value="0"
-                oninput="showValue('relacionamentos-familiares', this.value); updateChart()"
-              />
-              <span id="relacionamentos-familiaresValor">0</span>
+            <div class="d-flex align-items-center">
+              <div class="p-2 flex-fill">
+                <label for="relacionamentos-familiares"
+                  >Relacionamentos familiares:</label
+                >
+              </div>
+              <div class="p-2 flex-fill">
+                <input
+                  type="range"
+                  id="relacionamentos-familiares"
+                  min="0"
+                  max="10"
+                  value="0"
+                  oninput="showValue('relacionamentos-familiares', this.value); updateChart()"
+                />
+              </div>
+              <div class="p-2 flex-fill">
+                <span id="relacionamentos-familiaresValor">0</span>
+              </div>
             </div>
-
             <!-- Relacionamentos sociais -->
-            <div class="slider-container">
-              <label for="relacionamentos-sociais"
-                >Relacionamentos sociais:</label
-              >
-              <input
-                type="range"
-                id="relacionamentos-sociais"
-                min="0"
-                max="10"
-                value="0"
-                oninput="showValue('relacionamentos-sociais', this.value); updateChart()"
-              />
-              <span id="relacionamentos-sociaisValor">0</span>
+            <div class="d-flex align-items-center">
+              <div class="p-2 flex-fill">
+                <label for="relacionamentos-sociais"
+                  >Relacionamentos sociais:</label
+                >
+              </div>
+              <div class="p-2 flex-fill">
+                <input
+                  type="range"
+                  id="relacionamentos-sociais"
+                  min="0"
+                  max="10"
+                  value="0"
+                  oninput="showValue('relacionamentos-sociais', this.value); updateChart()"
+                />
+              </div>
+              <div class="p-2 flex-fill">
+                <span id="relacionamentos-sociaisValor">0</span>
+              </div>
             </div>
-
             <!-- Relacionamentos amorosos -->
-            <div class="slider-container">
-              <label for="relacionamentos-amorosos"
-                >Relacionamentos amorosos:</label
-              >
-              <input
-                type="range"
-                id="relacionamentos-amorosos"
-                min="0"
-                max="10"
-                value="0"
-                oninput="showValue('relacionamentos-amorosos', this.value); updateChart()"
-              />
-              <span id="relacionamentos-amorososValor">0</span>
+            <div class="d-flex align-items-center">
+              <div class="p-2 flex-fill">
+                <label for="relacionamentos-amorosos"
+                  >Relacionamentos amorosos:</label
+                >
+              </div>
+              <div class="p-2 flex-fill">
+                <input
+                  type="range"
+                  id="relacionamentos-amorosos"
+                  min="0"
+                  max="10"
+                  value="0"
+                  oninput="showValue('relacionamentos-amorosos', this.value); updateChart()"
+                />
+              </div>
+              <div class="p-2 flex-fill">
+                <span id="relacionamentos-amorososValor">0</span>
+              </div>
             </div>
-            <div class="buttons pt-5">
-              <button id="saveButton" class="btn btn-primary">Salvar</button>
-              <button id="addApplicationButton" class="btn btn-primary">
+            <div class="buttons py-5">
+              <button id="saveButton" class="btn btn-primary my-2">
+                Salvar
+              </button>
+              <button id="addApplicationButton" class="btn btn-primary my-2">
                 Inserir Outra Aplicação
               </button>
             </div>
-            <!-- Final inputs -->
           </div>
         </div>
 
         <!-- Segunda coluna -->
         <div
+          id="col-2"
           class="col-lg-6 col-12 d-flex align-items-center justify-content-center"
           style="min-height: 80vh"
         >

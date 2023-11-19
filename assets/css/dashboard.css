@@ -8,18 +8,11 @@ header {
 }
 
 main {
-  height: 100vh; /* Altura do main ajustada */
+  height: calc(100vh - 60px); /* Altura do main ajustada */
 }
 
-#entrada-dados {
+#col-1 {
   background-color: #ececec;
-}
-
-.slider-container {
-  display: flex;
-  align-items: center; /* Centraliza verticalmente os itens dentro do container */
-  justify-content: flex-start; /* Alinha os itens ao início do contêiner flex */
-  gap: 10px; /* Espaçamento entre os elementos internos */
 }
 
 .slider-container label {
@@ -48,42 +41,10 @@ main {
   padding: 20px; /* Isso adiciona um preenchimento dentro do canvas */
 }
 
-/* Estilo geral do controle deslizante */
-input[type="range"] {
-  -webkit-appearance: none; /* Remover a aparência padrão */
-  appearance: none; /* Define a aparência padrão */
-  width: 100%; /* Largura do controle deslizante */
-  height: 2px; /* Altura da trilha */
-  background: #ddd; /* Cor da trilha */
-  outline: none; /* Remove a borda ao focar */
-  opacity: 0.7; /* Transparência */
-  -webkit-transition: 0.2s; /* Animação ao interagir */
-  transition: opacity 0.2s;
-}
-
-/* Estilo do botão (thumb) do controle deslizante */
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Remover a aparência padrão */
-  appearance: none;
-  width: 15px; /* Largura do botão */
-  height: 15px; /* Altura do botão */
-  background: black; /* Cor do botão */
-  cursor: pointer; /* Cursor tipo ponteiro */
-  border-radius: 50%; /* Torna o botão redondo */
-}
-
-input[type="range"]::-moz-range-thumb {
-  width: 15px; /* Largura do botão */
-  height: 15px; /* Altura do botão */
-  background: black; /* Cor do botão */
-  cursor: pointer; /* Cursor tipo ponteiro */
-  border-radius: 50%; /* Torna o botão redondo */
-}
-
-input[type="range"]::-ms-thumb {
-  width: 15px; /* Largura do botão */
-  height: 15px; /* Altura do botão */
-  background: black; /* Cor do botão */
-  cursor: pointer; /* Cursor tipo ponteiro */
-  border-radius: 50%; /* Torna o botão redondo */
+/* Estilo para dispositivos móveis - Usando !important e ajustando o breakpoint */
+@media (max-width: 768px) {
+  #slider-wrapper {
+    width: 90%;
+    margin-top: 60px;
+  }
 }

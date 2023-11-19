@@ -204,8 +204,9 @@ function resetSliders() {
     if (sliderElement && labelElement) {
       sliderElement.value = 0;
       labelElement.textContent = "0";
-      // Atualizar o gráfico ao modificar os valores dos sliders
+      // Ensure that showValue is also called when the slider input changes
       sliderElement.oninput = function () {
+        showValue(sliderId, this.value); // Added this line
         updateChartData(sliderId, this.value);
       };
     }

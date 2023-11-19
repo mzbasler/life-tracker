@@ -10,3 +10,24 @@ header {
 main {
   height: 100vh; /* Altura do main ajustada */
 }
+#slogan {
+  font-size: 25px;
+}
+
+#col1-wrapper {
+  margin-left: 40px;
+}
+
+#col-2 {
+  display: block;
+}
+
+/* Estilo para dispositivos móveis - Usando !important e ajustando o breakpoint */
+@media (max-width: 768px) {
+  #col-2 {
+    display: none !important;
+  }
+  #col1-wrapper {
+    margin-left: 15px;
+  }
+}
