@@ -3,30 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- título da pagina -->
     <title>LifeTracker - Home</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-
+    <!-- favicon -->
     <link
       rel="shortcut icon"
       href="assets/img/favicon.svg"
       type="image/x-icon"
     />
-
-    <!-- Link para o arquivo de estilos CSS customizado -->
+    <!-- bootstrap 5.3-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- css customizado index -->
     <link rel="stylesheet" href="/assets/css/index.css" />
   </head>
 
   <body class="d-flex flex-column vh-100">
-    <!-- HEADER -->
+    <!-- header -->
     <header>
-      <!-- A tag <nav> é usada para definir uma seção de navegação -->
+      <!-- nav -->
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <!-- Logo e nome da marca com alinhamento vertical usando classes do Bootstrap -->
           <a class="navbar-brand" href="#">
             <img
               src="assets/img/logo-lifetracker.svg"
@@ -51,10 +52,10 @@
       </nav>
     </header>
 
-    <!-- MAIN -->
+    <!-- main -->
     <main>
       <div class="row h-100 p-0 m-0">
-        <!-- Conteúdo da primeira coluna -->
+        <!-- primeira coluna - boas vindas e botão cadastrar-->
         <div
           id="col-1"
           class="col-lg-6 col-12 d-flex align-items-center justify-content-center"
@@ -73,26 +74,28 @@
               <span class="align-middle fs-3">LifeTracker</span>
             </div>
 
-            <!-- Título e parágrafo de introdução -->
-            <h1>Seja bem-vindo ao LifeTracker!</h1>
-            <p id="slogan">
-              Sua ferramenta para uma vida bem gerenciada, onde planos se tornam
-              realidade.
-            </p>
-            <!-- Botão de cadastro -->
+            <!-- título e parágrafo de introdução -->
+            <div>
+              <h1>Seja bem-vindo ao LifeTracker!</h1>
+              <p id="slogan">
+                Sua ferramenta para uma vida bem gerenciada, onde planos se
+                tornam realidade.
+              </p>
+            </div>
+
+            <!-- botão de cadastro -->
             <a href="/assets/pages/cadastrar.html" class="btn btn-primary"
               >Cadastrar</a
             >
           </div>
         </div>
-        <!-- Segunda coluna -->
+        <!-- segunda coluna - imagem da logo -->
         <div
           id="col-2"
           class="col-lg-6 col-12 d-flex align-items-center justify-content-center"
         >
           <!-- Conteúdo da segunda coluna -->
           <div class="d-flex justify-content-center">
-            <!-- Imagem, por exemplo, um gráfico ou diagrama -->
             <img src="/assets/img/logo-lifetracker.png" alt="" />
           </div>
         </div>
