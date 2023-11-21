@@ -124,24 +124,28 @@
               <label for="email">Email:</label>
               <input
                 type="email"
-                id="email"
+                id="email-cadastro"
                 class="form-control"
                 autocomplete="email"
               />
             </div>
             <div class="senha form-group py-1">
               <label for="senha">Senha:</label>
-              <input type="password" id="senha" class="form-control" />
+              <input id="senha-cadastro" type="password" class="form-control" />
             </div>
             <div class="repetir-senha form-group py-1">
               <label for="senha">Repetir senha:</label>
-              <input type="password" id="repetir-senha" class="form-control" />
+              <input
+                type="password"
+                id="senha-confirmacao"
+                class="form-control"
+              />
             </div>
             <div class="pt-2">
               <button
                 type="button"
                 class="btn btn-primary btn-block"
-                id="cadastrarUsuario"
+                id="registerButton"
               >
                 Cadastrar
               </button>
@@ -151,6 +155,14 @@
       </div>
     </main>
 
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <!-- Seu arquivo de configuração do Firebase -->
+    <script src="/assets/js/firebase/firebase-config.js"></script>
+    <!-- Seu arquivo de métodos de autenticação -->
+    <script src="/assets/js/firebase/auth-methods.js"></script>
+    <!-- Seu script para lidar com o evento de cadastro -->
     <script src="/assets/js/cadastrar.js"></script>
   </body>
 </html>
